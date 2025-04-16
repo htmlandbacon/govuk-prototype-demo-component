@@ -1,0 +1,31 @@
+{
+    "sass": [
+      "/app/assets/sass/components/_card.scss",
+      "/app/assets/sass/components/_cards.scss"
+    ],
+    "nunjucksPaths": [
+        "/app/views/nunjucks"
+    ],
+    "nunjucksMacros": [
+        {
+          "macroName": "prototypeCard",
+          "importFrom": "/components/card.njk"
+        },
+        {
+            "macroName": "prototypeCards",
+            "importFrom": "/components/cards.njk"
+        }
+    ],
+    "templates": [
+        {
+            "path":  "/app/views/nunjucks/templates/example-card-page.njk",
+            "name": "Example card page",
+            "type": "nunjucks"
+        },
+        {
+            "path":  "/app/views/nunjucks/templates/example-card-page-no-style.njk",
+            "name": "Example card page with no style",
+            "type": "nunjucks"
+        }
+    ]
+}

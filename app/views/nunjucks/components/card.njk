@@ -1,0 +1,10 @@
+{% macro prototypeCard(params) %}
+    <div class="prototype-component-card">
+        <h2 class="prototype-component-card__header">
+            <a href="{{ params.titleUrl }}" class="prototype-component-card__link">{{ params.title }}</a>
+        </h2>
+        {% if params.description %}
+            <p class="prototype-component-card__description">{{ params.description }}</p>
+        {% endif %}
+    </div>
+{% endmacro %}

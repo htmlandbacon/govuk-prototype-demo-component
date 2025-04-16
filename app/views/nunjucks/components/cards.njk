@@ -1,0 +1,14 @@
+{% from "./card.njk" import prototypeCard %}
+
+{% macro prototypeCards(params) %}
+    {% if params.cards | length > 0 %}
+        <ul class="prototype-component-cards">
+            {% for card in params.cards %}
+            <li class="prototype-component-cards__item">
+                {{ prototypeCard( card ) }}
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}
+

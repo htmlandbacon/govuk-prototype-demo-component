@@ -1,0 +1,19 @@
+{
+    "sass": [
+      "/app/assets/sass/component/_card.scss",
+      "/app/assets/sass/component/_cards.scss"
+    ],
+    "nunjucksPaths": [
+        "/app/views/components/"
+    ],
+    "nunjucksMacros": [
+        {
+          "macroName": "prototypeCard",
+          "importFrom": "components/card.njk"
+        },
+        {
+            "macroName": "prototypeCards",
+            "importFrom": "components/cards.njk"
+        }
+      ]
+}

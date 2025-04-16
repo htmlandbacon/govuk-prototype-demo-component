@@ -1,0 +1,75 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Example prototype card with no style" %}
+
+{% set bodyClasses = "prototype-component--remove-style" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <h1 class="govuk-heading-xl">
+      Example prototype card
+    </h1>
+
+    <h2 class="govuk-heading-m">
+      Single Card Example
+    </h2>
+
+    {{ 
+      prototypeCard({
+        title: "Your accessibility needs",
+        titleUrl: "/your-accessibility",
+        description: "Tell us how we can help support you."
+      })
+    }}
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+    <h2 class="govuk-heading-m">
+      Mutiple Cards Example
+    </h2>
+
+    {{ 
+      prototypeCards({
+        cards: [
+          {
+            title: "Card 1",
+            titleUrl: "/card1",
+            description: "More info about card 1"
+          },
+          {
+            title: "Card 2",
+            titleUrl: "/card2",
+            description: "More info about card 2"
+          },
+          {
+            title: "Card 3",
+            titleUrl: "/card3",
+            description: "More info about card 3"
+          },
+          {
+            title: "Card 4",
+            titleUrl: "/card4",
+            description: "More info about card 4"
+          },
+          {
+            title: "Card 5",
+            titleUrl: "/card5",
+            description: "More info about card 5"
+          },
+          {
+            title: "Card 6",
+            titleUrl: "/card6",
+            description: "More info about card 6"
+          }
+        ]
+      })
+    }}
+
+  </div>
+</div>
+
+{% endblock %}

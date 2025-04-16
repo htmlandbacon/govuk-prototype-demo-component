@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "govuk-prototype-kit dev",
+    "serve": "govuk-prototype-kit serve",
+    "start": "govuk-prototype-kit start"
+  },
+  "name": "@htmlandbacon/govuk-prototype-demo-component",
+  "version": "0.1.0",
+  "files": [
+    "govuk-prototype-kit.config.json",
+    "app/assets/sass/components",
+    "app/views/nunjucks"
+  ],
+  "dependencies": {
+    "@govuk-prototype-kit/common-templates": "2.0.1",
+    "govuk-frontend": "5.9.0",
+    "govuk-prototype-kit": "13.16.2"
+  }
+}
